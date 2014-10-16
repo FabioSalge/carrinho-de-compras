@@ -19,9 +19,11 @@ public class CarrinhoTest {
 
     @Test(expected = CarrinhoVazioExpected.class)
     public void colocandoZeroProduto() throws CarrinhoVazioExpected {
-        Produto menor;
-        menor = carrinho.menorProduto();
-        assertEquals(null, menor);
+        Produto menor2;
+        menor2 = carrinho.menorProduto();
+        if(1<2){
+        assertEquals(null, menor2);
+        }
     }
 
     @Test
